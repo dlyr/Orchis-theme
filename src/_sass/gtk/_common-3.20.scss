@@ -3855,8 +3855,11 @@ colorchooser .popover.osd {
 decoration {
   border-radius: $window-radius;
   box-shadow: $shadow-z16, 0 16px 16px 2px transparent, 0 6px 18px 5px transparent;
-  border: none;
+ // border: none;
+ // box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16),  0px 0px 0px 10px $primary; //dlyr  
 
+//  border: 1px solid orange;
+//  background: orange;
   // FIXME rationalize shadows
 
   // this is used for the resize cursor area
@@ -3869,6 +3872,8 @@ decoration {
     // or the jumping will happen during the transition.
     box-shadow: $shadow-z4, 0 16px 16px 2px transparent, 0 6px 18px 5px transparent;
     transition: $transition-shadow;
+   // border: 1px solid black;
+   // background: black;
   }
 
   .maximized &,
@@ -3877,20 +3882,27 @@ decoration {
   .tiled-top &,
   .tiled-right &,
   .tiled-bottom &,
-  .tiled-left & { border-radius: 0; }
+  .tiled-left & { border-radius: 0;    box-shadow:none;//dlyr
+ }
 
+  
   .maximized &,
   .fullscreen &,
   .popup & { box-shadow: none; }
-
+  
   // server-side decorations as used by mutter
   .ssd & {
     border-radius: $window-radius $window-radius 0 0;
-    box-shadow: none; // just doing borders, wm draws actual shadows
+//    box-shadow: none; // just doing borders, wm draws actual shadows
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16),  0 0 0 10px $primary; //dlyr
     margin: 0;
 
     &, &:backdrop {
       transition: none;
+    }
+
+    &:backdrop {
+      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16),  0 0 0 1px rgba(black, .8); //dlyr
     }
   }
 
@@ -3907,7 +3919,6 @@ decoration {
   messagedialog.csd & {
     border-radius: $window-radius;
     // box-shadow: $shadow-z24, 0 24px (38px * .6) 3px transparent, 0 9px (46px * .6) 8px transparent;
-
     // &:backdrop { box-shadow: $shadow-z4, 0 24px (38px * .6) 3px transparent, 0 9px (46px * .6) 8px transparent; }
   }
 
@@ -3918,7 +3929,7 @@ decoration {
     box-shadow: none;
     box-shadow: inset 0 1px highlight($titlebar);
     background-color: $titlebar;
-
+    
     &:backdrop { background-color: $titlebar-backdrop; }
   }
 }

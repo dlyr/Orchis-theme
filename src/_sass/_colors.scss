@@ -105,6 +105,7 @@
 //
 
 $primary:                               theme(color);
+
 $drop_target_color:                     $orange-dark;
 $background:                            if($variant == 'light', background(c), background(e));
 $surface:                               if($variant == 'light', background(a), background(h));
