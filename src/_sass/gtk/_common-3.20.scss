@@ -3886,15 +3886,11 @@ decoration {
  }
 
   
-  .maximized &,
-  .fullscreen &,
-  .popup & { box-shadow: none; }
   
   // server-side decorations as used by mutter
   .ssd & {
     border-radius: $window-radius $window-radius 0 0;
-//    box-shadow: none; // just doing borders, wm draws actual shadows
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16),  0 0 0 10px $primary; //dlyr
+    box-shadow: 0 0 0 1px $primary; //dlyr
     margin: 0;
 
     &, &:backdrop {
@@ -3902,7 +3898,7 @@ decoration {
     }
 
     &:backdrop {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16),  0 0 0 1px rgba(black, .8); //dlyr
+      box-shadow:  0 0 0 1px rgba(black, .8); //dlyr
     }
   }
 
