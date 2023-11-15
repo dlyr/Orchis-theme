@@ -8,17 +8,16 @@ $blackness-asset-suffix: if($blackness == 'false' or $topbar == 'light', '', '-b
 // Sizes
 //
 
-$space-size: if($compact == 'false', 6px, 2px);
-$margin-size: if($compact == 'false', 4px, 1px);
-$small-size: if($compact == 'false', 24px, 16px);
-$medium-size: if($compact == 'false', 36px, 24px);
-$large-size: if($compact == 'false', 48px, 32px);
-$size24px: 12px;
+$space-size: if($compact == 'false', 6px, 4px);
+$margin-size: if($compact == 'false', 4px, 2px);
+$small-size: if($compact == 'false', 24px, 22px);
+$medium-size: if($compact == 'false', 36px, 32px);
+$large-size: if($compact == 'false', 48px, 40px);
 
-$bar-size: 4px;
+$bar-size: 6px;
 $menuitem-size: if($compact == 'false', 28px, 24px);
-$base-icon-size: 14px;
-$large-icon-size: 22px;
+$base-icon-size: 16px;
+$large-icon-size: 32px;
 
 //
 // Radiuses
