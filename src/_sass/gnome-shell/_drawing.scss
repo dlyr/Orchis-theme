@@ -107,17 +107,20 @@
     background-color: if($variant == 'light', $base, on(dark, divider));
     margin: 2px 6px 6px;
     border: 2px solid transparent;
-    box-shadow: 0 3px 3px rgba(black, 0.24), 0 5px 8px rgba(black, 0.05);
+    box-shadow: 0 5px 8px rgba(black, 0.05);//dlyr
+//    box-shadow: 0 3px 3px rgba(black, 0.24), 0 5px 8px rgba(black, 0.05);
   }
 
   @if $t == focus {
     color: $text;
-    box-shadow: 0 3px 3px rgba(black, 0.20), 0 5px 8px rgba(black, 0.08);
+    box-shadow: 0 5px 8px rgba(black, 0.08);//dlyr
+//    box-shadow: 0 3px 3px rgba(black, 0.20), 0 5px 8px rgba(black, 0.08);
     border: 2px solid $primary;
   }
 
   @if $t == hover {
-    box-shadow: 0 3px 3px rgba(black, 0.20), 0 5px 8px rgba(black, 0.12);
+    box-shadow:  0 5px 8px rgba(black, 0.12);// dlyr
+  //  box-shadow: 0 3px 3px rgba(black, 0.20), 0 5px 8px rgba(black, 0.12);
   }
 
   @if $t == insensitive {
