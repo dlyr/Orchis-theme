@@ -4400,7 +4400,7 @@ colorchooser .popover.osd {
  **********************/
 window {
   border: none;
-  //border: 1px solid orange;
+
   &.csd {
     outline: none;
     padding: 0;
@@ -4416,7 +4416,6 @@ window {
       // or the jumping will happen during the transition.
       transition: $transition-shadow;
       box-shadow: $shadow-z4, 0 16px 16px 2px transparent, 0 6px 18px 5px transparent;
-    //  border: 1px solid rgba(0,0,0,0);
     }
 
     &.messagedialog {

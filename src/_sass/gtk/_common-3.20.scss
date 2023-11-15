@@ -3855,11 +3855,8 @@ colorchooser .popover.osd {
 decoration {
   border-radius: $window-radius;
   box-shadow: $shadow-z16, 0 16px 16px 2px transparent, 0 6px 18px 5px transparent;
- // border: none;
- // box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16),  0px 0px 0px 10px $primary; //dlyr  
+  border: none;
 
-//  border: 1px solid orange;
-//  background: orange;
   // FIXME rationalize shadows
 
   // this is used for the resize cursor area
@@ -3872,8 +3869,6 @@ decoration {
     // or the jumping will happen during the transition.
     box-shadow: $shadow-z4, 0 16px 16px 2px transparent, 0 6px 18px 5px transparent;
     transition: $transition-shadow;
-   // border: 1px solid black;
-   // background: black;
   }
 
   .maximized &,
@@ -3915,6 +3910,7 @@ decoration {
   messagedialog.csd & {
     border-radius: $window-radius;
     // box-shadow: $shadow-z24, 0 24px (38px * .6) 3px transparent, 0 9px (46px * .6) 8px transparent;
+
     // &:backdrop { box-shadow: $shadow-z4, 0 24px (38px * .6) 3px transparent, 0 9px (46px * .6) 8px transparent; }
   }
 
