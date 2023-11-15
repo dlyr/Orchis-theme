@@ -10,9 +10,9 @@ $blackness-asset-suffix: if($blackness == 'false' or $topbar == 'light', '', '-b
 
 $space-size: if($compact == 'false', 6px, 4px);
 $margin-size: if($compact == 'false', 4px, 2px);
-$small-size: if($compact == 'false', 24px, 22px);
-$medium-size: if($compact == 'false', 36px, 32px);
-$large-size: if($compact == 'false', 48px, 40px);
+$small-size: if($compact == 'false', 24px, 18px);
+$medium-size: if($compact == 'false', 36px, 26px);
+$large-size: if($compact == 'false', 48px, 34px);
 
 $bar-size: 6px;
 $menuitem-size: if($compact == 'false', 28px, 24px);
@@ -28,7 +28,7 @@ $window-radius: 0;
 $window-radius-minus-space: max(0, $window-radius - $space-size);
 
 
-$corner-radius: if($compact == 'false', $default_corner, max(0, $default_corner - 2px));
+$corner-radius: if($compact == 'false', $default_corner, max(2px, $default_corner - 2px));
 $material-radius: $default_corner / 2 + 4px;
 $menu-radius: $default_corner / 4 + $space-size + 2px;
 $popup-radius: $default_corner + $space-size + 2px;
