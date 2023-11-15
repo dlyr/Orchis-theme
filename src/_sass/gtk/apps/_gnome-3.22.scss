@@ -6,7 +6,7 @@
 // hard-coded css:
 // https://gitlab.gnome.org/GNOME/nautilus/blob/master/src/resources/css/nautilus.css
 
-$theme_list_radius: $window-radius - $space-size;
+$theme_list_radius: $window-radius-minus-space;
 
 .nautilus-window {
   &.background.csd.unified {
@@ -220,7 +220,7 @@ $theme_list_radius: $window-radius - $space-size;
 
       > stack {
         background-color: $base;
-        border-radius: $window-radius - 2px;
+        border-radius: $window-radius-minus-space;
       }
 
       scrolledwindow > .view:not(:selected):not(:hover):not(:checked) {

@@ -120,19 +120,19 @@
 
     > scrolledwindow {
       margin: 0 0 $space-size * 2 $space-size * 2;
-      border-radius: $window-radius - $space-size;
+      border-radius: $window-radius-minus-space;
       background-color: if($topbar == 'dark' and $variant == 'light', transparent, rgba($primary, 0.08));
 
       > overshoot, > undershoot {
-        &.top { border-radius: $window-radius - $space-size $window-radius - $space-size 0 0; }
-        &.bottom { border-radius: 0 0 $window-radius - $space-size $window-radius - $space-size; }
+        &.top { border-radius: $window-radius-minus-space $window-radius-minus-space 0 0; }
+        &.bottom { border-radius: 0 0 $window-radius-minus-space $window-radius-minus-space; }
       }
 
       > viewport {
         > list.navigation-sidebar {
           padding: 16px 0 16px 0;
           background: none;
-          border-radius: $window-radius - $space-size;
+          border-radius: $window-radius-minus-space;
 
           > separator { background: none; }
 
@@ -260,7 +260,7 @@
 
   tabbar {
     .box {
-      padding: 0 $window-radius - $space-size;
+      padding: 0 $window-radius-minus-space;
       background-color: transparent;
       box-shadow: inset 0 -1px if($topbar == 'dark' and $variant == 'light', transparent, $solid-border);
     }
@@ -307,21 +307,21 @@
     .nautilus-grid-view {
       &, gridview.view {
         background-color: $base;
-        border-radius: $window-radius - $space-size;
+        border-radius: $window-radius-minus-space;
         margin: 0 $space-size $space-size 0;
       }
     }
 
     .nautilus-list-view {
       background-color: $base;
-      border-radius: $window-radius - $space-size;
+      border-radius: $window-radius-minus-space;
       margin: 0 $space-size $space-size 0;
 
       .view { background-color: transparent; }
     }
 
     placesview {
-      border-radius: $window-radius - $space-size;
+      border-radius: $window-radius-minus-space;
       margin: 0 $space-size $space-size 0;
       background-color: $base;
 

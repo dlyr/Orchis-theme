@@ -3844,7 +3844,7 @@ window.aboutdialog {
     &,
     & > .view,
     & > .view > text {
-      border-radius: $window-radius - $space-size;
+      border-radius: $window-radius-minus-space;
     }
   }
 
